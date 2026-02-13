@@ -1,0 +1,383 @@
+/* ═══════════════════════════════════════════════════════════
+   EVENTS PAGE SPECIFIC STYLES
+   ═══════════════════════════════════════════════════════════ */
+
+/* Day navigation */
+.day-nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.day-nav-link {
+  padding: 10px 24px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.25s;
+}
+
+.day-nav-link:hover {
+  border-color: var(--rose);
+  color: var(--rose-light);
+}
+
+/* Day sections */
+.day-section {
+  margin-bottom: 64px;
+}
+
+.day-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.day-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: var(--card-border);
+  line-height: 1;
+  user-select: none;
+}
+
+.day-info h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+
+.day-info .day-date {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+/* Theme bar */
+.theme-bar {
+  background: linear-gradient(135deg, rgba(232, 145, 122, 0.08) 0%, rgba(228, 180, 194, 0.08) 100%);
+  border: 1px solid rgba(232, 145, 122, 0.25);
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theme-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--rose-light);
+  letter-spacing: 0.3px;
+}
+
+.theme-details {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.theme-details span {
+  color: var(--rose);
+  font-weight: 400;
+}
+
+/* Pinterest link */
+.pinterest-link {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.pinterest-link a {
+  display: inline-block;
+  padding: 10px 24px;
+  background: rgba(232, 145, 122, 0.08);
+  border: 1px solid rgba(232, 145, 122, 0.3);
+  border-radius: 8px;
+  color: var(--rose-light);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: all 0.25s;
+}
+
+.pinterest-link a:hover {
+  background: rgba(232, 145, 122, 0.15);
+  border-color: var(--rose);
+  transform: translateY(-2px);
+}
+
+/* Activity blocks */
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.block:hover {
+  border-color: rgba(232, 145, 122, 0.3);
+  transform: translateX(3px);
+}
+
+.block-icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.block-content {
+  flex: 1;
+}
+
+.block-time {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.block-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.block-detail {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.block.rose { border-left: 3px solid var(--rose); }
+.block.gold { border-left: 3px solid var(--gold); }
+.block.blush { border-left: 3px solid var(--blush); }
+.block.lilac { border-left: 3px solid var(--lilac); }
+
+/* Choice section (for brunch options) */
+.choice-section {
+  background: var(--accent-bg);
+  border: 1px solid rgba(228, 180, 194, 0.15);
+  border-radius: 14px;
+  padding: 22px 24px;
+}
+
+.choice-label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blush);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.choice-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choice-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.choice-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--rose);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.choice-name {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.choice-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Venue pill */
+.venue-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(201, 169, 110, 0.1);
+  border: 1px solid rgba(201, 169, 110, 0.25);
+  border-radius: 99px;
+  padding: 4px 12px;
+  font-size: 11px;
+  color: var(--gold-light);
+  margin-top: 7px;
+}
+
+/* Concert block */
+.concert-block {
+  background: linear-gradient(135deg, #1e1228 0%, #271535 50%, #1e1228 100%);
+  border: 1px solid rgba(196, 170, 214, 0.35);
+  border-radius: 14px;
+  padding: 28px 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.concert-block::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(196, 170, 214, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.concert-label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--lilac);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.concert-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.concert-title span {
+  color: var(--lilac);
+  font-style: italic;
+}
+
+.concert-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.concert-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.concert-meta-item .label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.concert-meta-item .value {
+  font-size: 13px;
+  color: var(--lilac);
+  font-weight: 500;
+}
+
+.concert-notes {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(196, 170, 214, 0.15);
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.concert-notes strong {
+  color: var(--lilac);
+  font-weight: 500;
+}
+
+/* Note box */
+.note-box {
+  background: var(--accent-bg);
+  border: 1px solid rgba(228, 180, 194, 0.2);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.note-box strong {
+  color: var(--blush);
+  font-weight: 500;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .day-number {
+    font-size: 40px;
+  }
+
+  .day-nav {
+    gap: 8px;
+  }
+
+  .day-nav-link {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+
+  .concert-title {
+    font-size: 24px;
+  }
+
+  .concert-meta {
+    gap: 14px;
+  }
+}
