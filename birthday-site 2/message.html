@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Message | Birthday Weekend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .bday-girl-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 24px auto;
+      border: 3px solid var(--rose);
+      box-shadow: 0 8px 24px rgba(232, 145, 122, 0.2);
+    }
+
+    .bday-girl-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .letter-container {
+      max-width: 650px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      position: relative;
+    }
+
+    .letter-container::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 120px;
+      color: rgba(232, 145, 122, 0.1);
+      line-height: 1;
+    }
+
+    .letter-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .letter-content p {
+      font-size: 16px;
+      line-height: 1.9;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .letter-content p:first-of-type::first-letter {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 64px;
+      line-height: 1;
+      float: left;
+      margin: 8px 12px 0 0;
+      color: var(--rose);
+    }
+
+    .letter-signature {
+      margin-top: 40px;
+      text-align: right;
+    }
+
+    .letter-signature p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-style: italic;
+      color: var(--rose-light);
+      margin-bottom: 4px;
+    }
+
+    .letter-signature span {
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    @media (max-width: 600px) {
+      .letter-container {
+        padding: 32px 24px;
+      }
+
+      .letter-content p:first-of-type::first-letter {
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Mar's 27th Birthday Weekend</a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span>☰</span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guests.html">The Squad</a></li>
+        <li><a href="message.html">Birthday Message</a></li>
+        <li><a href="events.html">Events & Themes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="page-container">
+    
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="page-tag">A Note From Your Host</div>
+      
+      <!-- Birthday Girl Photo -->
+      <div class="bday-girl-photo">
+        <img src="photos/birthday-girl.jpg" alt="Birthday Girl">
+      </div>
+      
+      <h1 class="page-title">
+        A Message from the<br><em>Birthday Girl</em>
+      </h1>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Letter -->
+    <section class="content-section">
+      <div class="letter-container">
+        <div class="letter-content">
+          <p>
+            First of all, thank you. Thank you for making this trip, for clearing your schedules, for showing up and showing out for my 27th birthday. This isn't just any weekend. This is THE weekend. The one we'll talk about for years, the one we'll reference in group chats with "remember when…", the one that sets the standard.
+          </p>
+          <p>
+            I wanted to create something unforgettable, something that felt like *us* — bougie but fun, planned but spontaneous, aesthetic but authentic. Every detail of this weekend was designed with y'all in mind. From the themed nights to the desert adventures to the Cardi B concert finale, I want every single moment to feel special.
+          </p>
+          <p>
+            So come ready with your best energy, your best outfits, and your best selves (per usual). Come ready to paint, to scream Cardi lyrics at the top of your lungs, dance until 2am. Come ready to make memories that'll live in our camera rolls and our hearts forever.
+          </p>
+          <p>
+            My actual birthday is March 26th, but celebrating early with you all feels right. Because honestly? The best gift isn't a thing — it's having the people I love most in one place living our best lives together.
+          </p>
+          <p style="margin-bottom: 0;">
+            Let's make 27 iconic. I can't wait to see you all in Arizona. 💕
+          </p>
+
+          <div class="letter-signature">
+            <p>_With love,</p>
+            <span>The Birthday Bitch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <div style="text-align: center; margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--card-border);">
+      <a href="events.html" class="btn btn-primary">View Full Itinerary</a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
